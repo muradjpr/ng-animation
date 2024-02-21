@@ -1,0 +1,3 @@
+:host {
+  @apply block p-3 border-[2px] border-gray-300 rounded-md shadow-lg;
+}

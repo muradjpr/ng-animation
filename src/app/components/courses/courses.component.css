@@ -1,0 +1,3 @@
+.selected {
+  @apply border-[2px]  rounded-md border-green-300;
+}

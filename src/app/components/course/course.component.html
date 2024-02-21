@@ -1,0 +1,37 @@
+<!-- <div
+  class="shadow-lg p-[12px] border border-gray-300 rounded-md"
+
+> -->
+<div class="flex items-center gap-3 mb-3">
+  <h2 class="text-4xl font-bold tracking-wider">{{ course.title }}</h2>
+  <span
+    [ngClass]="getBgColor()"
+    class="bg-green-300 rounded-lg px-3 py-1 text-sm font-semibold tracking-wider text-gray-700"
+    >{{ course.status | lowercase }}</span
+  >
+</div>
+<p class="text-base">
+  {{ course.description }}
+</p>
+<div class="my-3 flex gap-3 items-center">
+  <select name="" id="" class="form-select" #statusRef>
+    <option [value]="'active'">Active</option>
+    <option [value]="'inactive'">inactive</option>
+    <option [value]="'draft'">draft</option>
+  </select>
+  <div class="flex gap-3 items-center">
+    <button
+      class="bg-green-300 font-semibold text-sm tracking-wider text-gray-700 py-2 px-4 border border-gray-300"
+      (click)="onStatusUpdate()"
+    >
+      Update
+    </button>
+    <button
+      (click)="onDeleteCourse()"
+      class="bg-rose-300 font-semibold text-sm tracking-wider text-gray-700 py-2 px-4 border border-gray-300"
+    >
+      Remove
+    </button>
+  </div>
+</div>
+<!-- </div> -->
